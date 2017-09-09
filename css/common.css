@@ -1,0 +1,167 @@
+/*公用css*/
+@charset 'utf-8';
+ /*初始化设置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+img{vertical-align: top;}
+address,caption,cite,code,dfn,em,strong,th,var,i,b{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+capation,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before, q:after{content:'';}
+abbr,acronym{border:0;}
+.fl{float:left;display:inline;}  /* 可修复IE6中双倍边距bug */
+.fr{float:right;display:inline;}
+.no-margin{
+	margin:0 !important;
+}
+
+/*用伪元素清除浮动造成的塌陷*/
+.clearfix:after{
+	content:'';
+	clear:both;
+	display:block;  /*只有块状元素才可以清除浮动造成的塌陷*/
+	height: 0;
+	visibility:hidden;
+}
+.clearfix{
+	zoom:1;
+}
+
+/*声明图表字体*/
+@font-face {
+  font-family: "iconfont";
+  src: url('font/iconfont.eot'); /* IE9*/
+  src: url('font/iconfont.eot#iefix') format('embedded-opentype'), 
+  url('font/iconfont.woff') format('woff'), 
+  url('font/iconfont.ttf') format('truetype'), 
+  url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+/*使用图标字体*/
+.icon{
+	font-family: "iconfont";
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+body{
+	color:#3c3c3c;
+	-webkit-font-smoothing: antialiased;   /*当网页在webkit内核呈现的时候，让字体更加圆润*/
+}
+a{
+	color:#6c6c6c;
+	text-decoration: none;
+}
+a:hover{
+	color:#ff4400;
+	cursor:pointer;
+}
+/*版心*/
+.banxin{
+	width:1190px;
+	margin:0 auto;
+}
+.hong{
+	color:#F22E00;
+}
+.tbcheng{
+	color:#FF4400 !important;
+}
+.hui{
+	color:#9C9C9C;
+}
+.gray{
+	color:#DEDEE3;
+}
+.hongse{
+	color:#FA9B78;
+}
+
+/*用户导航 start*/
+.user-nav{
+	height:35px;
+	line-height:35px;
+	background-color:#F5F5F5;
+	border-bottom:1px solid #eee;
+}
+.user-nav .banxin{
+}
+.user-nav .nav-left{
+
+}
+.user-nav .nav-left li{
+	float:left;
+	margin-left: 6px;
+    margin-right: 16px;
+	
+}
+.user-nav .nav-right li{
+	float:left;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    padding-left: 6px;
+    padding-right: 6px;
+    position:relative;
+        z-index: 2;
+}
+.user-nav .nav-right li.on{
+	background:#fff;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+}
+.user-nav .nav-right li span{
+	padding-left:4px;
+
+}
+.user-nav .nav-right li .submain{
+	background:#fff;
+	position:absolute;
+	left:-1px;
+	top:35px;
+	border:1px solid #eee;
+	border-top:0 none;
+	padding:8px 0;
+	display:none;
+}
+.user-nav .nav-right li:last-child .submain{
+	right:-1px;
+	left:auto;
+
+
+}
+.user-nav .nav-right li.on .submain{
+	display:block;
+}
+.user-nav .nav-right li .submain a{
+	white-space:nowrap;
+	display:block;
+	padding:0px 6px;
+
+}
+.user-nav .nav-right li .submain a:hover{
+	background:#F5F5F5;
+
+}
+/*用户导航 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
